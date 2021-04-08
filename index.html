@@ -1,0 +1,149 @@
+<!-- lien vers Github https://lancelot3123.github.io/cv/, problème d'affichage il lit pas le CSS :( et aussi cliquez n'importe ou sur la langing page de mon site il y a une surprise :p Et par rapport au responsive je sais pas si c'est normal que dans le mode inspection sur google chrome quand je change la taille rien ne change mais quand on modifie directement la taille de la fenetre du navigateur ca marche. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title>Lancelot Mercey</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="menu-toggle" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="overlay"></div>
+      <div class="container">
+        <nav id="navbar">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#first">Formations</a></li>
+            <li><a href="#second">Compétences</a></li>
+            <li><a href="#third">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="togglerData">
+            <div>
+              <input type="checkbox" class="checkbox" id="chk" />
+              <label class="label" for="chk">
+                <div class="ball"></div>
+              </label>
+            </div>
+      </div>
+
+       <div class="animation-area">
+            <ol class="box-area">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+         </div>
+    
+    
+  </header>
+
+    <div class="formationPageContent multiple" id="first">
+      <h1 class="o reveal" >Mes formations :</h1>
+      <div class="contain reveal"> 
+        <div class="card">
+          <div class="imgbox">
+            <img src="img/logodvn.png" class="form">
+          </div>
+          <div class="details">
+            <h2>Digital Marketing <br> And <br> Data Analytics</h2>
+            <p>Master II à l'EMLV et l'IIM en DMDA <br> Expériences à l'étranger <br> Cours en SEO, Marketing, Digital Ads <br> Design, Growth Hacking, Data Strategy <br> Web Dev </p>
+        </div>
+      </div>
+      <div class="card2">
+          <div class="imgbox">
+            <img src="img/ucrq.png" class="form">
+          </div>
+          <div class="details">
+            <h2>Business <br> and <br> Adversiting</h2>
+            <p>Semestre d'échange en Californie à UC Riverside.
+            Cours en Advertising, Event Management, Motivating others.
+            </p>
+          </div>
+      </div>
+    </div>
+        
+  
+     
+    </div>
+    <div class="experiencePageContent multiple" id="second">
+      <h2 class="o reveal">Mes compétences<h2>
+      <div class="reveal">
+          <img src="img/ain.png" class="layer" data-score="1.5">
+          <img src="img/psn.png" class="layer" data-score="2">
+          <img src="img/indn.png" class="layer" data-score="1.5">
+          <img src="img/html.png" class="layer" data-score="2">
+          <img src="img/css.png" class="layer" data-score="1.5">
+      </div>
+      <div class="reveal">
+          <img src="img/ads.png" class="layer" data-score="1.5">
+          <img src="img/ga.png" class="layer" data-score="2">
+          <img src="img/xc.png" class="layer" data-score="1.5">
+          <img src="img/w.png" class="layer" data-score="1.5">
+          <img src="img/ppt.png" class="layer" data-score="2">
+      </div>  
+    </div>
+
+
+
+
+
+
+    <div class="contactPageContent multiple " id="third">
+      <h1 class="o reveal">Comment me contacter</h1>
+        <!--<ul class="contact reveal">
+          <li><a href="https:www.linkedin.com/in/lancelot-mercey" ><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        </ul-->
+    <div class="screen reveal">
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <span>Vers mon linkedin.</span>
+          </div>
+          <ul class="contact reveal">
+          <li><a href="https:www.linkedin.com/in/lancelot-mercey" ><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        </ul>
+        </div>
+        <div class="screen-body-item">
+          <div class="app-form">
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="NAME">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="EMAIL">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="CONTACT NO">
+            </div>
+            <div class="app-form-group message">
+              <input class="app-form-control" placeholder="MESSAGE">
+            </div>
+            <div class="app-form-group buttons">
+              <button class="app-form-button">ANNULER</button>
+              <button class="app-form-button">ENVOYER</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  
+
+
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>

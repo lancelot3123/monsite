@@ -1,0 +1,170 @@
+* {
+  padding-inline-start:0;
+  /* overflow: auto; */
+}
+
+.contain{
+  width: 100%;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+
+
+.card{
+  position: relative;
+  margin: 20px  0;
+  margin-right: 50px;
+  width: 350px;
+  height: 350px;
+  color: black;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  transition: 1s;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.card:hover{
+  transform: perspective(2000px) rotate(-10deg);
+  /*box-shadow: inset 3px 0 13px rgba(0,0,0,.5);*/
+}
+
+.card .imgbox{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s;
+  border-radius: 50%;
+}
+
+.card:hover .imgbox{
+  transform: rotateY(-135deg);
+
+}
+.card .imgbox .img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card .details{
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+}
+
+.card2{
+  position: relative;
+  margin: 20px  0;
+  width: 350px;
+  height: 350px;
+  color: black;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  transition: 1s;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.card2:hover{
+  transform: perspective(2000px) rotate(-10deg);
+  /*box-shadow: inset 5px 0 20px rgba(0,0,0,.5);*/
+}
+
+.card2 .imgbox{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  transform-origin: left;
+  z-index: 1;
+  transition: 1s;
+  border-radius: 50%;
+}
+
+.card2:hover .imgbox{
+  transform: rotateY(-135deg);
+
+}
+.card2 .imgbox .img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card2 .details{
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.experiencePageContent h2{
+  font-size: 6em;
+  z-index: 1;
+}
+
+.experiencePageContent{
+  display: flex;
+  justify-content: space-between;
+
+  z-index: 6 !important;
+}
+
+.multiple{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+  
+.experiencePageContent h2{
+  font-size: 6em;
+  z-index: 1;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+img{
+  border-radius: 50%;
+}
+
+.card .dark{
+  background: black;
+
+}
+
+@media screen and (max-width: 700px) {
+
+  .contain{
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+  }
+
+}
